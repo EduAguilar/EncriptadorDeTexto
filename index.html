@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,36 +8,51 @@
     <meta name="description" content="Encriptador de texto, Proyecto 01 Alura - ONEG7">
     <meta name="author" content="Aguilar Uribe Eduardo Alfredo">
     <link rel="shortcut icon" type="image/x-icon" href="./assets/img/polar-lock.gif" />
-    <link rel="stylesheet" href="./assets/css/styles.css">
-
+    <link rel="stylesheet" href="./assets/css/myStyles.css">
 </head>
+
 <body>
+    <!-- <video src="https://static.vecteezy.com/system/resources/previews/002/709/708/mp4/security-lock-binary-digital-paticle-explosive-colorful-random-number-motion-abstract-technology-background-on-black-screen-free-video.mp4" autoplay="true" muted="true" loop="true" poster="./assets/img/fondo_encriptacion_scaled.jpg"></video> -->
 
     <header>
         <nav>
-            <div class="miLogo">
-
-
-            </div>
+            <a href="" rel="">
+                <img src="https://tecnoptimus.com/wp-content/uploads/2018/04/MiLogo-300x300.png" alt="Logo TecnOptimus" class="miLogo">
+            </a>
         </nav>
     </header>
 
     <main>
         <section class="inputText">
-            <h1>Ingrese el texto aquí</h1>
+            <textarea class="encriptar" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="aviso-inputText">
+                <img src="./assets/img/zondicons--exclamation-outline.svg" alt="icono exclamación" class="img-aviso">
+                <p class="texto-aviso">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="buttons">
+                <button type="submit" class="btnEncriptar">Encriptar</button>
+                <button type="submit" class="btnDesencriptar">Desencriptar</button>
+            </div>
         </section>
-        <section class="buttons">
-
-        </section>
+        
         <section class="outputText">
-            <h1>Texto Encriptado</h1>
+            <div class="outputText-box">
+                <img src="./assets/img/3d-secure-look.gif" alt="imagen candado" class="img-candado">
+                <p class="texto01">Ningun mensaje fue encontrado</p>
+                <p class="texto02">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>     
+            <textarea type="mensaje" class="evaluar" readonly ></textarea>
+            <button type="submit" class="btnCopiar">Copiar</button>
+       
         </section>
     </main>
 
     <footer>
+        <p class="copyright">&copy; copyright 2024 - desarrollado por Aguilar Eduardo</p>
+        <a href="https://www.linkedin.com/in/edu-aguilar" target="_blank" rel="noopener"><img src="./assets/img/linkedin.svg" alt="Logo linkedin" class="linkedin"></a>
+        <a href="https://github.com/eduaguilar" target="_blank" rel="noopener"><img src="./assets/img/github-mark.svg" alt="Logo github" class="github" width="45px" height="45px"></a>
 
     </footer>
-
     <script src="./assets/js/app.js"></script>
     
 </body>
